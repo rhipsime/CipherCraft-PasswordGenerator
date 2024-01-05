@@ -1,12 +1,8 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body,
-.wrapper {
+html, body, .wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,14 +22,14 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0px;
+  padding-top: 0; /* Remove unnecessary padding-top */
   color: hsl(206, 17%, 28%);
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
-  border-width: 1px;
+  border: 1px solid transparent; /* Simplify border property */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
@@ -42,7 +38,7 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
+.card-header::after, .card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -56,14 +52,7 @@ header {
 
 .card-footer {
   text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  overflow: hidden; /* Add overflow to clear floats */
 }
 
 .card-footer::after {
@@ -76,8 +65,7 @@ header {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -104,14 +92,10 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
+  padding: 15px; /* Adjust padding */
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0; /* Adjust margin */
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
@@ -121,7 +105,7 @@ button[disabled] {
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
-    margin: 16px 0px 0px 0px;
+    margin: 16px 0 0 0;
     padding: 10px 15px;
   }
 
