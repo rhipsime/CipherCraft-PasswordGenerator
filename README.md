@@ -17,8 +17,6 @@ CipherCraft is a dynamic and responsive password generator web application that 
 ![CipherCraft Screenshot](/assets/Screenshot%204.png)
 !![CipherCraft Screenshot](/assets/Screenshot%205.png)
 ![CipherCraft Screenshot](/assets/Screenshot%206.png)
-![CipherCraft Screenshot](/assets/Screenshot%207.png)
-![CipherCraft Screenshot](/assets/Screenshot%208.png)
 
 - **Deployed Application**
 Visit: https://rhipsime.github.io/CipherCraft-PasswordGenerator/
