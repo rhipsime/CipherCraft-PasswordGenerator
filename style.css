@@ -22,14 +22,14 @@ body {
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0; /
+  padding-top: 0; /* Remove unnecessary padding-top */
   color: hsl(206, 17%, 28%);
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
-  border: 1px solid transparent; /
+  border: 1px solid transparent; /* Simplify border property */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
@@ -52,7 +52,8 @@ header {
 
 .card-footer {
   text-align: center;
-  overflow: hidden; /
+  overflow: hidden; /* Add overflow to clear floats */
+}
 
 .card-footer::after {
   content: " ";
@@ -91,10 +92,10 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding: 15px; /
+  padding: 15px; /* Adjust padding */
   font-size: 1.2rem;
   text-align: center;
-  margin: 10px 0; /
+  margin: 10px 0; /* Adjust margin */
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
