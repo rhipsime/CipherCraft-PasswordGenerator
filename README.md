@@ -21,3 +21,10 @@ CipherCraft is a dynamic and responsive password generator web application that 
 ![CipherCraft Screenshot](/assets/Screenshot%208.png)
 
 - **Deployed Application**
+Visit: https://rhipsime.github.io/CipherCraft-PasswordGenerator/
+
+- **Contributing**
+We welcome contributions! Feel free to open an issue or submit a pull request.
+
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
